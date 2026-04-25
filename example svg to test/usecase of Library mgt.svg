@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .actor { fill: #e8f4f8; stroke: #2c3e50; stroke-width: 2; }
+      .usecase { fill: #d5e8d4; stroke: #82b366; stroke-width: 2; }
+      .system { fill: #f5f5f5; stroke: #666666; stroke-width: 2; stroke-dasharray: 8,4; }
+      .line { stroke: #2c3e50; stroke-width: 1.5; fill: none; }
+      .label { font-size: 11px; fill: #333; }
+      .title { font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-size: 12px; fill: #666; }
+    </style>
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title">Library Management System</text>
+  <text x="450" y="48" text-anchor="middle" class="subtitle">Use Case Diagram</text>
+
+  <!-- System Boundary Box -->
+  <rect x="220" y="60" width="640" height="620" rx="10" class="system"/>
+  <text x="540" y="80" text-anchor="middle" class="subtitle" font-weight="bold">Library Management System</text>
+
+  <!-- ============ ACTORS ============ -->
+  
+  <!-- Librarian Actor (Left) -->
+  <rect x="50" y="200" width="40" height="60" rx="5" class="actor"/>
+  <circle cx="70" cy="180" r="18" class="actor"/>
+  <text x="70" y="235" text-anchor="middle" class="label" font-weight="bold">Librarian</text>
+  
+  <!-- Member Actor (Bottom Left) -->
+  <rect x="50" y="520" width="40" height="60" rx="5" class="actor"/>
+  <circle cx="70" cy="500" r="18" class="actor"/>
+  <text x="70" y="555" text-anchor="middle" class="label" font-weight="bold">Member</text>
+
+  <!-- Guest Actor (Top Left) -->
+  <rect x="50" y="80" width="40" height="60" rx="5" class="actor"/>
+  <circle cx="70" cy="60" r="18" class="actor"/>
+  <text x="70" y="115" text-anchor="middle" class="label" font-weight="bold">Guest</text>
+
+  <!-- Admin Actor (Right side) -->
+  <rect x="820" y="350" width="40" height="60" rx="5" class="actor"/>
+  <circle cx="840" cy="330" r="18" class="actor"/>
+  <text x="840" y="385" text-anchor="middle" class="label" font-weight="bold">Admin</text>
+
+  <!-- ============ USE CASES for LIBRARIAN ============ -->
+  
+  <!-- Add Book -->
+  <ellipse cx="350" cy="160" rx="60" ry="25" class="usecase"/>
+  <text x="350" y="164" text-anchor="middle" class="label">Add Book</text>
+  <line x1="90" y1="230" x2="290" y2="172" class="line"/>
+
+  <!-- Remove Book -->
+  <ellipse cx="350" cy="220" rx="65" ry="25" class="usecase"/>
+  <text x="350" y="224" text-anchor="middle" class="label">Remove Book</text>
+  <line x1="90" y1="230" x2="285" y2="232" class="line"/>
+
+  <!-- Update Book Info -->
+  <ellipse cx="350" cy="280" rx="70" ry="25" class="usecase"/>
+  <text x="350" y="284" text-anchor="middle" class="label">Update Book Info</text>
+  <line x1="90" y1="230" x2="280" y2="292" class="line"/>
+
+  <!-- Manage Members -->
+  <ellipse cx="530" cy="220" rx="70" ry="25" class="usecase"/>
+  <text x="530" y="224" text-anchor="middle" class="label">Manage Members</text>
+  <line x1="90" y1="230" x2="460" y2="232" class="line"/>
+
+  <!-- Process Membership -->
+  <ellipse cx="530" cy="160" rx="80" ry="25" class="usecase"/>
+  <text x="530" y="164" text-anchor="middle" class="label">Process Membership</text>
+  <line x1="90" y1="230" x2="450" y2="172" class="line"/>
+
+  <!-- Generate Reports -->
+  <ellipse cx="530" cy="280" rx="70" ry="25" class="usecase"/>
+  <text x="530" y="284" text-anchor="middle" class="label">Generate Reports</text>
+  <line x1="90" y1="230" x2="460" y2="292" class="line"/>
+
+  <!-- Handle Overdue -->
+  <ellipse cx="420" cy="340" rx="75" ry="25" class="usecase"/>
+  <text x="420" y="344" text-anchor="middle" class="label">Handle Overdue/Fine</text>
+  <line x1="90" y1="230" x2="345" y2="352" class="line"/>
+
+  <!-- ============ USE CASES for MEMBER ============ -->
+  
+  <!-- Search Catalog -->
+  <ellipse cx="350" cy="430" rx="70" ry="25" class="usecase"/>
+  <text x="350" y="434" text-anchor="middle" class="label">Search Catalog</text>
+  <line x1="90" y1="520" x2="280" y2="442" class="line"/>
+
+  <!-- Borrow Book -->
+  <ellipse cx="350" cy="490" rx="60" ry="25" class="usecase"/>
+  <text x="350" y="494" text-anchor="middle" class="label">Borrow Book</text>
+  <line x1="90" y1="520" x2="290" y2="502" class="line"/>
+
+  <!-- Return Book -->
+  <ellipse cx="350" cy="550" rx="60" ry="25" class="usecase"/>
+  <text x="350" y="554" text-anchor="middle" class="label">Return Book</text>
+  <line x1="90" y1="520" x2="290" y2="562" class="line"/>
+
+
+  <!-- Reserve Book -->
+  <ellipse cx="530" cy="430" rx="65" ry="25" class="usecase"/>
+  <text x="530" y="434" text-anchor="middle" class="label">Reserve Book</text>
+  <line x1="90" y1="520" x2="465" y2="442" class="line"/>
+
+  <!-- View Account -->
+  <ellipse cx="530" cy="490" rx="65" ry="25" class="usecase"/>
+  <text x="530" y="494" text-anchor="middle" class="label">View Account</text>
+  <line x1="90" y1="520" x2="465" y2="502" class="line"/>
+
+  <!-- Pay Fine -->
+  <ellipse cx="530" cy="550" rx="55" ry="25" class="usecase"/>
+  <text x="530" y="554" text-anchor="middle" class="label">Pay Fine</text>
+  <line x1="90" y1="520" x2="475" y2="562" class="line"/>
+
+  <!-- ============ USE CASES for GUEST ============ -->
+  
+  <!-- Search Public -->
+  <ellipse cx="350" cy="100" rx="75" ry="25" class="usecase"/>
+  <text x="350" y="104" text-anchor="middle" class="label">Search Catalog</text>
+  <line x1="70" y1="120" x2="275" y2="112" class="line"/>
+
+  <!-- View Availability -->
+  <ellipse cx="530" cy="100" rx="75" ry="25" class="usecase"/>
+  <text x="530" y="104" text-anchor="middle" class="label">View Availability</text>
+  <line x1="70" y1="120" x2="455" y2="112" class="line"/>
+
+  <!-- Register -->
+  <ellipse cx="440" cy="395" rx="55" ry="25" class="usecase"/>
+  <text x="440" y="399" text-anchor="middle" class="label">Register</text>
+  <line x1="70" y1="120" x2="385" y2="407" class="line"/>
+
+  <!-- ============ USE CASES for ADMIN ============ -->
+  
+  <!-- System Config -->
+  <ellipse cx="720" cy="280" rx="65" ry="25" class="usecase"/>
+  <text x="720" y="284" text-anchor="middle" class="label">System Config</text>
+  <line x1="830" y1="350" x2="785" y2="292" class="line"/>
+
+  <!-- Backup Data -->
+  <ellipse cx="720" cy="340" rx="60" ry="25" class="usecase"/>
+  <text x="720" y="344" text-anchor="middle" class="label">Backup Data</text>
+  <line x1="830" y1="350" x2="780" y2="352" class="line"/>
+
+  <!-- Manage Users -->
+  <ellipse cx="720" cy="400" rx="65" ry="25" class="usecase"/>
+  <text x="720" y="404" text-anchor="middle" class="label">Manage Users</text>
+  <line x1="830" y1="350" x2="785" y2="412" class="line"/>
+
+  <!-- Audit Logs -->
+  <ellipse cx="720" cy="460" rx="55" ry="25" class="usecase"/>
+  <text x="720" y="464" text-anchor="middle" class="label">Audit Logs</text>
+  <line x1="830" y1="350" x2="775" y2="472" class="line"/>
+
+  <!-- ============ RELATIONSHIPS (Extend/Include) ============ -->
+  
+  <!-- <<include>> Search to Availability -->
+  <path d="M 395 430 L 455 430" class="line" marker-end="url(#arrowhead)"/>
+  <text x="410" y="420" text-anchor="middle" class="label" font-size="9">«include»</text>
+
+  <!-- <<extend>> Overdue to Fine -->
+  <path d="M 495 340 L 500 370 Q 510 390 495 490" class="line" marker-end="url(#arrowhead)"/>
+  <text x="520" y="400" text-anchor="middle" class="label" font-size="9">«extend»</text>
+
+  <!-- <<include>> Search to View Details -->
+  <path d="M 375 100 L 455 100" class="line" marker-end="url(#arrowhead)"/>
+  <text x="410" y="90" text-anchor="middle" class="label" font-size="9">«include»</text>
+
+  <!-- <<extend>> View Account to Pay Fine -->
+  <path d="M 595 490 L 595 550" class="line" marker-end="url(#arrowhead)" stroke-dasharray="4,3"/>
+  <text x="610" y="520" text-anchor="middle" class="label" font-size="9">«extend»</text>
+
+  <!-- ============ GENERALIZATION (Guest extends to Member) ============ -->
+  <path d="M 70 138 L 70 200" class="line" marker-end="url(#arrowhead)"/>
+  <text x="85" y="170" class="label" font-size="9">«extend»</text>
+
+  <!-- ============ LEGEND ============ -->
+  <rect x="245" y="610" width="590" height="60" rx="5" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <text x="260" y="628" class="label" font-weight="bold">Legend:</text>
+  <ellipse cx="310" cy="635" rx="40" ry="12" class="usecase"/>
+  <text x="360" y="639" class="label" font-size="9">= Use Case</text>
+  <rect x="430" y="623" width="20" height="30" rx="3" class="actor"/>
+  <text x="460" y="645" class="label" font-size="9">= Actor</text>
+  <rect x="530" y="623" width="100" height="20" rx="3" class="system"/>
+  <text x="640" y="639" class="label" font-size="9">= System Boundary</text>
+  <line x1="700" y1="633" x2="740" y2="633" class="line" stroke-dasharray="4,3"/>
+  <text x="750" y="637" class="label" font-size="9">= Extend</text>
+  <line x1="780" y1="633" x2="810" y2="633" class="line" marker-end="url(#arrowhead)"/>
+  <text x="820" y="637" class="label" font-size="9">= Include</text>
+
+</svg>

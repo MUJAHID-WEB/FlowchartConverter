@@ -1,0 +1,11 @@
+pytesseract
+pillow
+opencv-python
+opencv-contrib-python
+requests
+pandas
+matplotlib
+seaborn
+reportlab
+numpy
+ollama
